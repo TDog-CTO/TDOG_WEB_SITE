@@ -1,12 +1,25 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+   
 }
 
 :root {
-    --primary--color: #edf2fc;
+    --primary--color: #f36dc0;
     --secondary-color: #212121;
-    --third-color: #606163;
+    --third-color: #19777c;
+    --fourth-color:#03cdd8;
+    height: 100vh; 
+    width: 1200; 
+    background: var(--primary--color);
+    
+}
+
+body{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .dark-theme {
@@ -15,23 +28,23 @@
 }
 
 #icon {
-    width: 30px;
+    width: 60px;
     cursor: pointer;
     margin-right: 5%;
 }
 
 .hero {
-    height: 100%;
-    width: 100%;
+    height: 100vh; 
+    width: 100vw; 
     background: var(--primary--color);
     font-family: sans-serif;
     position: relative;
+   
 }
 
 nav {
-    width: 84%;
+    width: 100%;
     margin: auto;
-    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,13 +56,8 @@ nav {
     cursor: pointer;
 }
 
-nav ul {
-    display: inline-flex;
-    list-style: none;
-    margin: 10px 20px;
-    padding: 12px;
-    margin-left: 30%;
-   
+.CTOBan{
+    width: 1000px;
 }
 
 nav ul li a {
@@ -57,10 +65,11 @@ nav ul li a {
     color: var(--third-color); 
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 20px; /* Adjusted font size */
 }
 nav ul li a:hover {
-    color: #ff4321;
+    color: #1de9e9;
 }
 
 .info {
@@ -70,11 +79,12 @@ nav ul li a:hover {
 }
 .info h1{
     font-size: 30px;
-    color: var(--secondary-color);
+    color: var(--third-color);
     margin-bottom: 20px;
+    color: #19777c;
 }
 span {
-    color: #ff4321;
+   color: #13ddf8;
 }
 
 .info p {
@@ -95,15 +105,15 @@ span {
 }
 
 .info a:hover {
-    background: #ff4321;
+    background: #04bebe;
 }
 
 .img-box {
-    width: 45%;
-    height: 80%;
+    width: 35%;
+    height: 60%;
     position: absolute;
     bottom: 0;
-    right: 100px;
+    margin-left: 650px;
 }
 
 .img-box img {
@@ -138,6 +148,28 @@ span {
 }
 
 .social-links a:hover {
-    color: #ff4331;
+    color: #1de9e9;
 }
 
+.dexchart {
+    margin-top: 200px;
+    padding: 0;
+    margin-left: 0; /* Adjusted margin-left to move the chart flush against the left */
+}
+span{
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: perment marker;
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+ .chartH1 {
+    margin-left: 400px;
+    margin-top: 180px;
+    color: var(--fourth-color);
+ }
